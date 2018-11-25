@@ -29,7 +29,7 @@
 						<?php $i = $i + 1;?>
 						<tr>
 							<td> {{ $i }} </td>
-							<td> <img src="{{ asset($product->image_url) }}" style="width: 80px; height: 80px;"></td>
+							<td> <img src="{{ $product->image_url }}" style="width: 80px; height: 80px;"></td>
 							<td> {{ $product->product_name }}</td>
 							<td> {{ $product->current_price }}</td>
 							<td> {{ $product->discount_rate }}</td>
@@ -44,6 +44,7 @@
 					@endforeach
 				</tbody>
 			</table>
+			{{ $products->links() }}
 		</div>
 	</div>
 </main><!-- /.container -->

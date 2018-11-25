@@ -86,7 +86,7 @@
           	@foreach($products as $key => $product)
             <div class="col-md-3 col-sm-6">
     		<span class="thumbnail">
-      			<img src="{{ asset($product->image_url)}}" class="thumb" alt="{{$product->product_name}}">
+      			<img src="{{ $product->image_url}}" class="thumb" alt="{{$product->product_name}}">
       			<h4>{{$product->product_name}}</h4>
       			<div class="ratings">
                     <span class="glyphicon glyphicon-star"></span>
@@ -110,6 +110,7 @@
   		</div>
             @endforeach
         </div>
+        {{ $products->links() }}
       </div>
 
     </main>
