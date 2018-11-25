@@ -26,9 +26,9 @@
 
     						<th>S.N</th>
 
-    						<th>Seller</th>
+                            <th>Primary Key</th>
 
-    						<th>Deleted_at</th>
+    						<th>Seller</th>
 
     						<th>Actions</th>
 
@@ -48,9 +48,9 @@
 
     							<td> {{ $i }} </td>
 
-    							<td> {{ $seller->name }}</td>
+                                <td> {{ $seller->id }}</td>
 
-    							<td> {{ $seller->deleted_at }}</td>
+    							<td> {{ $seller->name }}</td>
     							
     							<td> <a class="btn btn-xs btn-primary" href="{{ URL::to('seller/'.$seller->id.'/edit') }}">Edit</a>
 

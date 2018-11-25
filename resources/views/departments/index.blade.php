@@ -24,6 +24,8 @@
 
     						<th>S.N</th>
 
+                            <th> Primary Key</th>
+
     						<th>Department</th>
 
     						<th>Actions</th>
@@ -43,6 +45,8 @@
     						<tr>
 
     							<td> {{ $i }} </td>
+
+                                <td> {{ $department->id }}</td>
 
     							<td> {{ $department->name }}</td>
     							
