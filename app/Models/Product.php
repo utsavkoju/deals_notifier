@@ -16,7 +16,7 @@ class Product extends Model
     	$query->leftjoin('brands','brands.id','=','products.brand_id');
     	$query->where('products.deleted_at',null);
     	$result = $query->paginate(20); //object[array] $query->first() //single value as array
-    	return $result; // this will return result
+    	return $result; // this will return result //this line is updated by kritika while yawning
     }
 
     public function get_details($id) {
