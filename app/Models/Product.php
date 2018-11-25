@@ -13,9 +13,9 @@ class Product extends Model
     	$query->select(\DB::RAW("products.id, products.name as 'product_name', current_price, discount_rate, image_url, product_url, departments.name as 'department', sellers.name as 'seller', brands.name as 'brand'"));
     	$query->join('departments','departments.id','=','products.department_id');
     	$query->join('sellers','sellers.id','=','products.seller_id');
-    	$query->join('brands','brands.id','=','products.brand_id');
+    	$query->leftjoin('brands','brands.id','=','products.brand_id');
     	$query->where('products.deleted_at',null);
-    	$result = $query->paginate(30); //object[array] $query->first() //single value as array
+    	$result = $query->paginate(20); //object[array] $query->first() //single value as array
     	return $result;
     }
 
@@ -24,7 +24,7 @@ class Product extends Model
         $query->select(\DB::RAW("products.id, products.name as 'product_name', products.product_description, current_price, discount_rate, image_url, product_url, departments.name as 'department', sellers.name as 'seller', brands.name as 'brand'"));
         $query->join('departments','departments.id','=','products.department_id');
         $query->join('sellers','sellers.id','=','products.seller_id');
-        $query->join('brands','brands.id','=','products.brand_id');
+        $query->leftjoin('brands','brands.id','=','products.brand_id');
         $query->where('products.deleted_at',null);
         $query->where('products.id','=',$id);
         $result = $query->first(); //object[array] $query->first() //single value as array
