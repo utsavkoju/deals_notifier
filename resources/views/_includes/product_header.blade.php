@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Deal Notifiers</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -7,19 +8,10 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="{{ URL::to('/home') }}">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{{ URL::to('/') }}">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ URL::to('/product') }}">Products</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ URL::to('/brand') }}">Brand Registration</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ URL::to('/seller') }}">Seller Registration</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ URL::to('/department') }}">Department Addition</a>
+        <a class="nav-link" href="{{ URL::to('/deals') }}">All Deals</a>
       </li>
 
     </ul>
@@ -27,5 +19,11 @@
       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ URL::to('/login') }}">Login</a>
+      </li>
+    </ul>
   </div>
 </nav>
+</header>
