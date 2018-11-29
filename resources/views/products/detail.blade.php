@@ -39,28 +39,6 @@ div.section > div > input {margin:0;padding-left:5px;font-size:10px;padding-righ
 @endsection
 
 @section('content')
-    <header>
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">Deals Notifier</h4>
-            
-            </div>
-           
-          </div>
-        </div>
-      </div>
-      <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <strong>Deals Notifier</strong>
-          </a>
-          
-        </div>
-      </div>
-    </header>
-
     <main role="main">
     	<a href="{{ URL::previous() }}" class="btn btn-primary">Back</a>
     	<div class="container">
