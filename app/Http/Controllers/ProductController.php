@@ -98,4 +98,13 @@ class ProductController extends Controller
         $this->data['product'] = $product->get_details($id);
         return view('products.detail', $this->data);
     }
+
+    public function search() {
+        $product = new Product();
+        $keyword = \Request::get('keyword');
+        $this->data['keyword'] = $keyword;
+        $this->data['count'] = $product->get_search_count($keyword);
+        $this->data['results'] = $product->get_search($keyword);
+        return view('products.result', $this->data);
+    }
 }

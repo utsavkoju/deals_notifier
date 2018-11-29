@@ -13,6 +13,7 @@
 
 Route::get('/','HomeController@home');
 Route::get('/deals','HomeController@deals');
+Route::get('product/search','ProductController@search')->name('product.search');
 Route::get('/product/{id}/details','ProductController@details')->name('product.details');
 //Route::get('/login', array('uses'=>'UserController@login'))->name('login');
 Route::get('/login','UserController@login')->name('login');
