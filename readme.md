@@ -47,6 +47,7 @@ Responsive webpage framework
 ## Authors
 
 ***Anisha Shrestha***
+
 ***Kritika Sijapati*** 
 
 ## Acknowledgments
