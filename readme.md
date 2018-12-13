@@ -1,10 +1,10 @@
 ## Project Name: Deal Notifier
 
-## Initial Setup:
+### Initial Setup:
 
 This web application will aggregates all the deals offered by the retailers in your surrounding. Our AI is smart enough to learn your behaviour and wisely suggest the best deals that’s available on the market.
 
-## Getting Started
+### Getting Started
 
 As we are aggregating deals from the local retailer, first and foremost please build a good rapport with your neighbours.
 
@@ -37,17 +37,17 @@ php artisan db:seed
 ```
 Now system can be accessed going through `http://localhost/[project_name]` on the browser of your choice.
 
-## Built With
+### Built With
 
 * [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 Responsive webpage framework
 * [Laravel](https://laravel.com/) - PHP Framework
 * [Composer](https://getcomposer.org/) - Dependency Manager
 
-## Authors
+### Authors
 
 ***Anisha Shrestha***
 
 ***Kritika Sijapati*** 
 
-## Acknowledgments
+### Acknowledgments
